@@ -25,7 +25,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #a23;
+  background: #db4b5c;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -56,7 +56,7 @@ body {
   font-size: 3.4em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.89em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -208,20 +208,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #a23;
+  color: #db4b5c;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #dd5566;
+  color: #eca0a9;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #6a1520; }
+  background: #b52435; }
 
 /*********************************************
  * IMAGES
@@ -243,7 +243,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #a23;
+  border-color: #db4b5c;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -251,31 +251,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #a23; }
+  border-right-color: #db4b5c; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #a23; }
+  border-left-color: #db4b5c; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #a23; }
+  border-bottom-color: #db4b5c; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #a23; }
+  border-top-color: #db4b5c; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #dd5566; }
+  border-right-color: #eca0a9; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #dd5566; }
+  border-left-color: #eca0a9; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #dd5566; }
+  border-bottom-color: #eca0a9; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #dd5566; }
+  border-top-color: #eca0a9; }
 
 /*********************************************
  * PROGRESS BAR
@@ -284,7 +284,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #a23;
+  background: #db4b5c;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -292,6 +292,9 @@ body {
 .reveal p {
   font-weight: 300;
   text-shadow: 1px 1px #222; }
+
+.reveal .big-p {
+  font-size: 45px; }
 
 .reveal h1,
 .reveal h2,
@@ -302,9 +305,12 @@ body {
   font-weight: 700; }
 
 .reveal p code {
-  background-color: #23241f;
+  background-color: #121210;
   display: inline-block;
   border-radius: 7px; }
 
 .reveal small code {
   vertical-align: baseline; }
+
+.underline {
+  text-decoration: underline; }
