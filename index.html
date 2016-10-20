@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="eng">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -73,7 +73,7 @@
 				</section>
 				<section>
 					<section>
-						<h1>The basics</h1>
+						<h1>The vocabulary</h1>
 					</section>
 					<section>
 						<h1>Section 508 Complaince</h1>
@@ -112,11 +112,25 @@
 						<h1>Alternative text</h1>
 						<ul>
 							<li>Providing a textual alternative for non-text content in Web pages</li>
-							<li>Read by screen readers allowing the content and the function of the image to be accessible to the reader</li>
+							<li>Read by screen readers allowing the <em>content</em> and the <em>function</em> of the image to be accessible to the reader</li>
 							<li>Displays when a file does not load</li>
 							<li>Provides semantic meaning to images, which can be helpful for search engines</li>
 						</ul>
 					</section>
+					<section>
+						<h1>Bad</h1>
+						<img src="images/rainbow-white-house.jpg" alt="White House with rainbow" width="500" /><br>
+						<code>&lt;img src="images/rainbow-white-house.jpg" alt="White House with rainbow" /&gt;</code>
+						<p>Credit: New York Times</p>
+					</section>
+					<section>
+						<h1>Good</h1>
+						<img src="images/rainbow-white-house.jpg" alt="White House lit with rainbow lights to celebrate legal gay marriage" width="500" /><br>
+						<code>&lt;img src="images/rainbow-white-house.jpg" alt="White House lit with rainbow lights to celebrate legal gay marriage" /&gt;</code>
+						<p>Credit: New York Times</p>
+					</section>
+				</section>
+				<section>	
 					<section>
 						<h1>Semantic HTML</h1>
 						<ul>
@@ -127,6 +141,24 @@
 						</ul>
 					</section>
 					<section>
+						<h1>Bad</h1>
+						<code>
+							&lt;h1&gt;About Us&lt;/h1&gt; <br>
+							&lt;p&gt;Here is some text&lt;/p&gt; <br>
+							&lt;h3&gt;Out Mission&lt;/h3&gt;
+						</code>
+					</section>
+					<section>
+						<h1>Good</h1>
+						<code>
+							&lt;h1&gt;About Us&lt;/h1&gt; <br>
+							&lt;p&gt;Here is some text&lt;/p&gt; <br>
+							&lt;h2&gt;Out Mission&lt;/h2&gt;
+						</code>
+					</section>
+				</section>
+				<section>
+					<section>
 						<h1>Accessible Tables</h1>
 						<ul>
 							<li>Tables should have appropriate headers</li>
@@ -136,12 +168,68 @@
 						</ul>
 					</section>
 					<section>
+						<h1>Bad</h1>
+						<pre><code>
+&lt;tr&gt;
+&lt;td&gt;Name&lt;/td&gt;
+&lt;td&gt;Age&lt;/td&gt; 
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Lindsey&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt; 
+&lt;/tr&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h1>Better</h1>
+						<pre><code>
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt; 
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Lindsey&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt; 
+&lt;/tr&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h1>Even Better</h1>
+						<pre><code>
+&lt;tr&gt;
+&lt;th scope="col"&gt;Name&lt;/th&gt;
+&lt;th scope="col"&gt;Age&lt;/th&gt; 
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th scope="row"&gt;Lindsey&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt; 
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th scope="row"&gt;Karen&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt; 
+&lt;/tr&gt;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
 						<h1>Accessible Forms</h1>
 						<ul>
 							<li>Providing users with clear instructions, IE formatting instructions, required fields</li>
 							<li>Ensure all Forms are keyboard accessible, including select lists</li>
 							<li>Make sure all fields have a <code>&lt;label&gt;</code> even if you hide it for visually able users</li>
 						</ul>
+					</section>
+					<section>
+						<h1>Bad</h1>
+						<pre><code>
+&lt;input type="text" placeholder="Search" id="Search"&gt;
+&lt;input type="submit" value="Search"&gt;
+						</code></pre>
 					</section>
 				</section>
 			</div>
