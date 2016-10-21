@@ -140,7 +140,7 @@
 						<pre><code>
 &lt;h1&gt;About Us&lt;/h1&gt;
 &lt;p&gt;Here is some text&lt;/p&gt;
-&lt;h3&gt;Out Mission&lt;/h3&gt;
+&lt;h3&gt;Our Mission&lt;/h3&gt;
 						</code></pre>
 					</section>
 					<section>
@@ -148,7 +148,7 @@
 						<pre><code>
 &lt;h1&gt;About Us&lt;/h1&gt;
 &lt;p&gt;Here is some text&lt;/p&gt;
-&lt;h2&gt;Out Mission&lt;/h2&gt;
+&lt;h2&gt;Our Mission&lt;/h2&gt;
 						</code></pre>
 					</section>
 				</section>
@@ -271,6 +271,19 @@ to find out more.&lt;/p&gt;.&lt;/p&gt;
 							<li>Making sure that the "Skip" link is the first thing</li>
 							<li>Can be visible, invisible, or invisible until receives keyboard focus</li>
 						</ul>
+					</section>
+					<section>
+						<h1>Bad</h1>
+						<pre><code>
+&lt;!--
+&lt;body&gt;
+&lt;a href="#maincontent"&gt;Skip to main content&lt;/a&gt;
+...
+&lt;main id="maincontent"&gt;
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;This is the first paragraph&lt;/p&gt;
+--&gt;
+						</code></pre>
 					</section>
 					<section>
 						<h1>Good</h1>
