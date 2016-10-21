@@ -221,14 +221,49 @@
 						<ul>
 							<li>Providing users with clear instructions, IE formatting instructions, required fields</li>
 							<li>Ensure all Forms are keyboard accessible, including select lists</li>
-							<li>Make sure all fields have a <code>&lt;label&gt;</code> even if you hide it for visually able users</li>
+							<li>Make sure all fields have a <code>&lt;label&gt;</code> and associate it with the proper input, even if you hide it for visually able users</li>
 						</ul>
 					</section>
 					<section>
 						<h1>Bad</h1>
 						<pre><code>
-&lt;input type="text" placeholder="Search" id="Search"&gt;
+&lt;input type="text" placeholder="Search" id="search"&gt;
 &lt;input type="submit" value="Search"&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h1>Good</h1>
+						<pre><code>
+&lt;label for="search"&gt;Search: &lt;/label&gt;
+&lt;input type="text" placeholder="Search" id="search"&gt;
+&lt;input type="submit" value="Search"&gt;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+						<h1>Accessible Links</h1>
+						<ul>
+							<li>Making sure all links are accessible via the keyboard</li>
+							<li>Not using empty links (Common for JavaScript hovers)</li>
+							<li>Providing context in all links, not "Click Here"</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Bad</h1>
+						<pre><code>
+&lt;p&gt;&lt;a href="/some-link"&gt;Click here&lt;/a&gt; to find out more
+						</code></pre>
+						<pre>
+							<code>
+&lt;a href="#" onmouseover="dropdownmenu()"&gt;Products&lt;/a&gt;
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h1>Good</h1>
+						<pre><code>
+&lt;p&gt;Check out our &lt;a href="/some-link"&gt;resources about coding&lt;/a&gt; 
+to find out more.&lt;/p&gt;.&lt;/p&gt;
 						</code></pre>
 					</section>
 				</section>
