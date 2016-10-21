@@ -49,30 +49,6 @@
 				</section>
 				<section>
 					<section>
-						<h1>Why should I care?</h1>
-					</section>
-					<section>
-						<h1>Meet Jackson</h1>
-						<ul>
-							<li>Legally Blind and uses a screen reader</li>
-							<li>Ripped His Jeans and Needs a new pair</li>
-							<li>Short on Cash this month</li>
-							<li>Place he buys his jeans have a sale, but he cannot access it on the site</li>
-							<li>How does Jackson feel?</li>
-						</ul>
-					</section>
-					<section>
-						<h1>Why should I care?</h1>
-						<ul>
-							<li>Empathy and Inclusion</li>
-							<li>Good for business</li>
-							<li>Always part of your audience</li>
-							<li>Legal Repurcussions</li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<section>
 						<h1>The vocabulary</h1>
 					</section>
 					<section>
@@ -98,6 +74,25 @@
 							<li>Sites should have clear content and be <span class="underline">Understandable</span>.</li>
 							<li>Sites should support a <span class="underline">Robust</span> variety of browsers.</li>
 							<li><a href="https://www.w3.org/TR/WCAG20/">More about Principles</a></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Why should I care?</h1>
+					</section>
+					<section>
+						<h1>Case Study</h1>
+						<h2>The 2016 Election</h2>
+						<p>Donation Pages</p>
+					</section>
+					<section>
+						<h1>Why should I care?</h1>
+						<ul>
+							<li>Empathy and Inclusion</li>
+							<li>Good for business</li>
+							<li>Always part of your audience</li>
+							<li>Legal Repurcussions</li>
 						</ul>
 					</section>
 				</section>
@@ -266,6 +261,99 @@
 &lt;p&gt;Check out our &lt;a href="/some-link"&gt;resources about coding&lt;/a&gt; 
 to find out more.&lt;/p&gt;.&lt;/p&gt;
 						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Skipping Repetitive Links</h1>
+						<ul>
+							<li>Particularly important with navigation</li>
+							<li>Making sure that the "Skip" link is the first thing</li>
+							<li>Can be visible, invisible, or invisible until receives keyboard focus</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Good</h1>
+						<pre><code>
+&lt;body&gt;
+&lt;a href="#maincontent"&gt;Skip to main content&lt;/a&gt;
+...
+&lt;main id="maincontent"&gt;
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;This is the first paragraph&lt;/p&gt;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Avoiding Color for Meaning</h1>
+						<ul>
+							<li>Everyone perceives color differently</li>
+							<li>If color conveys meaning, there should be a non color way to show the same meaning</li> 
+						</ul>
+					</section>
+					<section>
+						<h1>Bad</h1>
+						<img src="images/color-fields.png" width="300" alt="image with 2 green outlined fields and a red field to indicate right and wrong"/>
+						<p>Image credited to <a href="http://bethsoderberg.com/">Beth Soderberg</a></p>
+					</section>
+					<section>
+						<h1>Better</h1>
+						<img src="images/color-fields-with-checks-and-x.png" width="300" alt="image with 2 green outlined fields with check marks and a red field with an x to indicate right and wrong" />
+						<p>Image credited to <a href="http://bethsoderberg.com/">Beth Soderberg</a></p>
+					</section>
+					<section>
+						<h1>Even Better</h1>
+						<img src="images/color-fields-with-error-message.png" width="300" alt="image with 2 green outlined fields  with check marks and a red field with an x and error message to indicate right and wrong" />
+						<p>Image credited to <a href="http://bethsoderberg.com/">Beth Soderberg</a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Other Items</h1>	
+					</section>
+					<section>
+						<h1>Visually Hidden</h1>
+						<ul>
+							<li>Do NOT use <code>display:none;</code></li>
+							<li>Use a Visually Hidden class instead</li>
+						</ul>
+						<pre><code>
+.visually-hidden {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h1>Accessible JavaScript</h1>
+						<ul>
+							<li>Most of the time you can use it to enhance accessibility</li>
+							<li>Usually the trouble points are:</li>
+							<ul>
+								<li>Navigation</li>
+								<li>Hidden Content</li>
+								<li>Lack of User Control</li>
+								<li>Disorienting the user from normal functionality or triggering abnormal events.</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h1>Making use of ARIA Labels</h1>
+						<ul>
+							<li>Most of the time you can use it to enhance accessibility</li>
+							<li>Usually the trouble points are:</li>
+							<ul>
+								<li>Navigation</li>
+								<li>Hidden Content</li>
+								<li>Lack of User Control</li>
+								<li>Disorienting the user from normal functionality or triggering abnormal events.</li>
+							</ul>
+						</ul>
 					</section>
 				</section>
 			</div>
